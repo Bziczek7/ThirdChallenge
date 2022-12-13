@@ -1,0 +1,73 @@
+/* Grid  */
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+}
+
+.about-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
+  grid-template-areas: 
+  "abt abc";
+}
+
+.work-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
+  grid-template-areas: 
+  "woc wot";
+
+}
+/* .contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 500px;
+  grid-template-areas: 
+  "cot cop";
+
+} */
+
+
+
+/* pictures */
+#about-card{
+  grid-area: abc;
+ 
+
+}
+
+#about-text{
+  grid-area: abt;
+
+}
+
+#about-text p::after{
+  content: "whatever";
+}
+
+/* #contact-card{
+  grid-area: coc;
+ 
+
+
+}
+
+#contact-text{
+  grid-area: cot;
+}  */
+
+#work-text{
+
+  grid-area: wot;
+}
+
+#work-card{
+  grid-area: woc;
+  
+
+}
